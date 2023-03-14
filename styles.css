@@ -15,7 +15,7 @@ h2 {
 	font-size: 35px;
 	text-align: center;
 	margin: 0px;
-	color: 	#2e73ea;
+	color: 	#22ddd2;
 }
 
 h3 {
@@ -84,6 +84,9 @@ h3 {
 .icon {
 	height: 50px;
 	padding: 5px;
+	color: white;
+	font-size: 50px;
+	cursor: pointer;
 	
 }
 
@@ -118,39 +121,46 @@ h3 {
 	display: flex;
 	flex-direction: row;
 	justify-content: center;
-	background-color: blue;
+
 }
 
 .job {
-	height: 45vh;
+	display: flex;
+	height: 48vh;
 	width: 20vw;
 	background-color: white;
 	margin-left: 10px;
 	margin-right: 10px;
 	border: black;
-	justify-content: center;
-	align-items: center;
+	flex-direction: column;
+	padding: 30px;
 
 }
 
 .job-icon{
-	height: 20%;
+	display: flex;
+	margin-left: auto;
+	margin-right: auto;
+	height: 30%;
 	width: 70%;
 	object-fit: contain;
-	mar
 	
 }
 
-@media screen and (max-width: 550px){
+.job-text{
+	display: flex;
+}
+
+@media screen and (max-width: 1000px){
 	.job{
-		width: 80vw;
+		width: 75vw;
 		justify-self: center;
 		margin-bottom: 15px;
+		min-height: 45vh;
 	}
 
 	#jobs_container{
 		flex-direction: column;
-		background-color: black;
 		align-items: center;
 	}
 }
@@ -674,4 +684,8 @@ canvas {
 		border-radius: 50%;
 	}
 
+}
+
+#subtitle{
+	color: #22ddd2;
 }
