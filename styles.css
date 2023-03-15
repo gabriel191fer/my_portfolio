@@ -42,7 +42,9 @@ h3 {
 }
 
 .nav-item{
+	display: block;
 	padding-inline: 10px;
+	z-index: 2000;
 }
 
 #nav_div {
@@ -56,16 +58,46 @@ h3 {
 
 @media screen and (max-width: 500px){
 	#nav_div{
-		height: 100vh;
+		position: fixed;
+		display: none;
+		height: auto;
 		width: 50vw;
+		top: 0;
+		margin-top: 8vh;
+		
 		right: 0;
-		top: -30;
-		background-color: white;
-		z-index: 10;
+		background-color: #172d67;
+		z-index: 1000;
 		color: #000;
+		text-align: center;
+		color: #22ddd2;
+		animation-name: slidein;
+		animation-duration: 500ms;	
 	}
-	
+}
 
+
+
+@keyframes slidein{
+	from {
+		margin-left: 100%;
+		width: 300%;
+	}
+	to {
+		margin-right: 0%;
+		width: 50%;
+	};
+}
+
+@keyframes slideout{
+	from {
+		margin-left: 300%;
+		width: 50%;
+	}
+	to {
+		margin-right: 100%;
+		width: 300%;
+	};
 }
 
 a.nav-item:visited {
@@ -155,7 +187,7 @@ a.nav-item:visited {
 	}
 
 	.nav-item{
-		display: none;
+		margin-block: 20px;
 	}
 	
 	.main-name{
