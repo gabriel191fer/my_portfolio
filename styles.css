@@ -64,7 +64,7 @@ h3 {
 		width: 50vw;
 		top: 0;
 		margin-top: 8vh;
-		
+		border-bottom-left-radius: 30px;
 		right: 0;
 		background-color: #172d67;
 		z-index: 1000;
@@ -72,7 +72,9 @@ h3 {
 		text-align: center;
 		color: #22ddd2;
 		animation-name: slidein;
-		animation-duration: 500ms;	
+		transition-delay: 2s;
+		animation-duration: 500ms;
+		transition: opacity 200ms, display 200ms;
 	}
 }
 
@@ -110,6 +112,14 @@ a.nav-item:visited {
 
 .main-name {
 	padding-left: 30px;
+	width: 20vw;
+	font-size: 30px;
+	text-align: center;
+	text-decoration: none;
+}
+
+.main-home {
+	padding-left: 0px;
 	width: 20vw;
 	font-size: 30px;
 	text-align: center;
@@ -156,10 +166,21 @@ a.nav-item:visited {
 	display: none;
 	padding-right: 16px;
 	position: fixed;
+	color: #22ddd2;
+
 }
 
 .nav-item a:visited{
 	color: #8c15e9;
+}
+
+.icon {
+	height: 50px;
+	padding: 5px;
+	color: white;
+	font-size: 50px;
+	cursor: pointer;
+	
 }
 
 @media screen and (max-width: 500px){
@@ -172,7 +193,7 @@ a.nav-item:visited {
 	}
 
 	.icon{
-		font-size: 30px;
+		font-size: 40px;
 	}
 
 	#profile_pic{
@@ -193,18 +214,12 @@ a.nav-item:visited {
 	.main-name{
 		font-size: 25px;
 		text-align: right;
+		display: none;
 	}
 }
 
 
-.icon {
-	height: 50px;
-	padding: 5px;
-	color: white;
-	font-size: 50px;
-	cursor: pointer;
-	
-}
+
 
 
 
