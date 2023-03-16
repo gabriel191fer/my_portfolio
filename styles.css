@@ -41,14 +41,35 @@ h3 {
 	z-index: 2;
 }
 
-.nav-item{
-	display: block;
+.nav-item-mobile{
+
 	padding-inline: 10px;
 	z-index: 2000;
 }
 
+.nav-item{
+	padding-inline: 10px;
+	z-index: 2000;
+	height: 8vh;
+	transition: 0.3s;
+}
+
+.nav-item:hover {
+	color: #8c15e9;
+}
+
 #nav_div {
+	position: fixed;
+	padding-right: 90px;
+	right: 0;
+	font-size: 20px;[
+	text-align: right: ;;
+	]
+}
+
+#nav_div_mobile {
 	display: fixed;
+	display: none;
 	justify-content: end;
 	align-items: center;
 	gap: 30px;
@@ -57,14 +78,14 @@ h3 {
 }
 
 @media screen and (max-width: 500px){
-	#nav_div{
+	#nav_div_mobile{
 		position: fixed;
 		display: none;
 		height: auto;
 		width: 50vw;
 		top: 0;
 		margin-top: 8vh;
-		border-bottom-left-radius: 30px;
+		border-bottom-left-radius: 15px;
 		right: 0;
 		background-color: #172d67;
 		z-index: 1000;
@@ -73,12 +94,13 @@ h3 {
 		color: #22ddd2;
 		animation-name: slidein;
 		transition-delay: 2s;
-		animation-duration: 500ms;
-		transition: opacity 200ms, display 200ms;
+		animation-duration: 200ms;
+	}
+
+	#nav_div{
+		display: none;
 	}
 }
-
-
 
 @keyframes slidein{
 	from {
@@ -116,6 +138,11 @@ a.nav-item:visited {
 	font-size: 30px;
 	text-align: center;
 	text-decoration: none;
+	transition: 0.3s;
+}
+
+.main-name:hover{
+	color: #8c15e9;
 }
 
 .main-home {
@@ -124,6 +151,14 @@ a.nav-item:visited {
 	font-size: 30px;
 	text-align: center;
 	text-decoration: none;
+}
+
+@media screen and (min-width: 501px)  {
+
+	.main-home{
+		display: none;
+	}
+	
 }
 
 #main_section{
@@ -161,7 +196,15 @@ a.nav-item:visited {
 	border-radius: 200px;
 }
 
+#burger-link{
+	display: flex;
+}
+
+
 #bars{
+	display: flex;
+	margin: auto;
+	align-items: center;
 	right: 0;
 	display: none;
 	padding-right: 16px;
@@ -174,13 +217,21 @@ a.nav-item:visited {
 	color: #8c15e9;
 }
 
+#bur{
+	margin-top: 5px;
+	height: 50px;}
+
 .icon {
 	height: 50px;
 	padding: 5px;
 	color: white;
 	font-size: 50px;
 	cursor: pointer;
-	
+	transition: 0.3s;
+}
+
+.icon:hover{
+	color: #8c15e9;
 }
 
 @media screen and (max-width: 500px){
@@ -205,6 +256,8 @@ a.nav-item:visited {
 		display: block;
 		height: 10px;
 		font-size: 35px;
+		margin-right: 8px;
+		
 	}
 
 	.nav-item{
