@@ -25,10 +25,10 @@ function burger() {
       x.style.display = "block", 200;
       nav.style.background = "#172d67";
       bg_nav.style.background = "#172d67"
-    } )
+    })
   } else {
     x.style.animationName = "slideout"
-    setTimeout(() => { 
+    setTimeout(() => {
       x.style.display = "none", 200;
       nav.style.background = "transparent";
       bg_nav.style.background = "transparent"

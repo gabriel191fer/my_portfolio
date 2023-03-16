@@ -11,20 +11,20 @@ h1 {
 	font-size: 50px;
 	text-align: center;
 	margin: 0px;
-	color: 	#8c15e9;
-	
+	color: #8c15e9;
+
 }
 
 h2 {
 	font-size: 35px;
 	text-align: center;
 	margin: 0px;
-	color: 	#22ddd2;
+	color: #22ddd2;
 }
 
 h3 {
 	font-size: 30px;
-	color: 	#2e73ea;
+	color: #2e73ea;
 }
 
 #navbar {
@@ -41,17 +41,21 @@ h3 {
 	z-index: 2;
 }
 
-.nav-item-mobile{
-
-	padding-inline: 10px;
-	z-index: 2000;
+.nav-item-mobile {
+	display: flex;
+	justify-content: center;
+	padding-bottom: 10px;
+	
 }
 
-.nav-item{
+
+
+.nav-item {
 	padding-inline: 10px;
-	z-index: 2000;
+
 	height: 8vh;
 	transition: 0.3s;
+	padding-top: 50px;
 }
 
 .nav-item:hover {
@@ -62,23 +66,18 @@ h3 {
 	position: fixed;
 	padding-right: 90px;
 	right: 0;
-	font-size: 20px;[
-	text-align: right: ;;
-	]
+	font-size: 20px;
+	text-align: right;
 }
 
 #nav_div_mobile {
-	display: fixed;
 	display: none;
-	justify-content: end;
-	align-items: center;
-	gap: 30px;
 	width: 78vw;
-	padding-right: 30px;
+	padding:25px;
 }
 
-@media screen and (max-width: 500px){
-	#nav_div_mobile{
+@media screen and (max-width: 500px) {
+	#nav_div_mobile {
 		position: fixed;
 		display: none;
 		height: auto;
@@ -88,7 +87,6 @@ h3 {
 		border-bottom-left-radius: 15px;
 		right: 0;
 		background-color: #172d67;
-		z-index: 1000;
 		color: #000;
 		text-align: center;
 		color: #22ddd2;
@@ -97,38 +95,44 @@ h3 {
 		animation-duration: 200ms;
 	}
 
-	#nav_div{
+	#nav_div {
 		display: none;
 	}
 }
 
-@keyframes slidein{
+@keyframes slidein {
 	from {
 		margin-left: 100%;
 		width: 300%;
 	}
+
 	to {
 		margin-right: 0%;
 		width: 50%;
-	};
+	}
+
+	;
 }
 
-@keyframes slideout{
+@keyframes slideout {
 	from {
 		margin-left: 300%;
 		width: 50%;
 	}
+
 	to {
 		margin-right: 100%;
 		width: 300%;
-	};
+	}
+
+	;
 }
 
 a.nav-item:visited {
 	color: #22ddd2;
 }
 
-.main-name{
+.main-name {
 	text-decoration: none;
 }
 
@@ -141,7 +145,7 @@ a.nav-item:visited {
 	transition: 0.3s;
 }
 
-.main-name:hover{
+.main-name:hover {
 	color: #8c15e9;
 }
 
@@ -153,15 +157,15 @@ a.nav-item:visited {
 	text-decoration: none;
 }
 
-@media screen and (min-width: 501px)  {
+@media screen and (min-width: 501px) {
 
-	.main-home{
+	.main-home {
 		display: none;
 	}
-	
+
 }
 
-#main_section{
+#main_section {
 	height: 100vh;
 }
 
@@ -183,7 +187,7 @@ a.nav-item:visited {
 #icon_container {
 	flex-direction: row;
 	align-items: center;
-	
+
 }
 
 #my_name {
@@ -196,12 +200,12 @@ a.nav-item:visited {
 	border-radius: 200px;
 }
 
-#burger-link{
+#burger-link {
 	display: flex;
 }
 
 
-#bars{
+#bars {
 	display: flex;
 	margin: auto;
 	align-items: center;
@@ -213,13 +217,14 @@ a.nav-item:visited {
 
 }
 
-.nav-item a:visited{
+.nav-item a:visited {
 	color: #8c15e9;
 }
 
-#bur{
+#bur {
 	margin-top: 5px;
-	height: 50px;}
+	height: 50px;
+}
 
 .icon {
 	height: 50px;
@@ -230,41 +235,41 @@ a.nav-item:visited {
 	transition: 0.3s;
 }
 
-.icon:hover{
+.icon:hover {
 	color: #8c15e9;
 }
 
-@media screen and (max-width: 500px){
-	#my_name{
+@media screen and (max-width: 500px) {
+	#my_name {
 		font-size: 70px;
 	}
 
-	#subtitle{
+	#subtitle {
 		font-size: 25px;
 	}
 
-	.icon{
+	.icon {
 		font-size: 40px;
 	}
 
-	#profile_pic{
+	#profile_pic {
 		width: 150px;
 		border-radius: 150px;
 	}
 
-	#bars{
+	#bars {
 		display: block;
 		height: 10px;
 		font-size: 35px;
 		margin-right: 8px;
-		
+
 	}
 
-	.nav-item{
+	.nav-item {
 		margin-block: 20px;
 	}
-	
-	.main-name{
+
+	.main-name {
 		font-size: 25px;
 		text-align: right;
 		display: none;
@@ -323,22 +328,22 @@ a.nav-item:visited {
 
 }
 
-.job-icon{
+.job-icon {
 	display: flex;
 	margin-left: auto;
 	margin-right: auto;
 	height: 30%;
 	width: 70%;
 	object-fit: contain;
-	
+
 }
 
-.job-text{
+.job-text {
 	display: flex;
 }
 
-@media screen and (max-width: 500px){
-	.job{
+@media screen and (max-width: 500px) {
+	.job {
 		width: 75vw;
 		justify-self: center;
 		margin-bottom: 15px;
@@ -347,10 +352,10 @@ a.nav-item:visited {
 
 
 
-	#jobs_container{
+	#jobs_container {
 		flex-direction: column;
 		align-items: center;
-	
+
 	}
 }
 
@@ -877,6 +882,6 @@ canvas {
 
 }
 
-#subtitle{
+#subtitle {
 	color: #22ddd2;
 }
