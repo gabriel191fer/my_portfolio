@@ -48,14 +48,24 @@ h3 {
 	
 }
 
+#skills_container{
+	height: auto;
+	width: 100vw;
+	background-color: white;
+}
+
 
 
 .nav-item {
 	padding-inline: 10px;
-
+	color: #22ddd2;
 	height: 8vh;
 	transition: 0.3s;
 	padding-top: 50px;
+}
+
+a.nav-item:visited{
+	color: #22ddd2;
 }
 
 .nav-item:hover {
