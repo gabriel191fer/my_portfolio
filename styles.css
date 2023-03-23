@@ -1,6 +1,7 @@
 html {
 	font-family: 'Roboto Condensed';
 	background-color: gray;
+	overflow-x: hidden;
 }
 
 a {
@@ -46,18 +47,67 @@ h3 {
 	justify-content: center;
 	padding-bottom: 10px;
 	
+	
 }
+
+ul{
+	padding-inline: 30px;
+}
+
+li { list-style: none; }
+
+.skill_icon{
+	height: 50px;
+	padding: 5px;
+	color: #8c15e9;
+	font-size: 50px;
+	transition: 0.3s;
+
+}
+
+
+.skill{
+	padding: 15px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+	margin-inline: auto;
+	width: 20vw;
+	background-color: white;
+	border-radius: 10px;
+	margin-inline: 10px;
+	font-size: 30px;
+}
+
+li{
+	display: flex;
+}
+
+
+.sicon{
+	display: flex;
+	padding-right: 15px;
+	font-size: 45px !important;
+}
+
+
 
 #skills_container{
 	height: auto;
+	margin: 0;
 	width: 100vw;
-	background-color: white;
+	display: flex;
+	justify-content: center;
+	overflow-x: hidden;
+	
 }
+
 
 
 
 .nav-item {
-	padding-inline: 10px;
+	padding-inline: 20px;
 	color: #22ddd2;
 	height: 8vh;
 	transition: 0.3s;
@@ -67,10 +117,18 @@ h3 {
 a.nav-item:visited{
 	color: #22ddd2;
 }
+a.nav-item:visited a.nav-item:hover{
+	color: #8c15e9;
+}
 
 .nav-item:hover {
 	color: #8c15e9;
 }
+
+a.nav-item:hover {
+	color: #8c15e9;
+}
+
 
 #nav_div {
 	position: fixed;
