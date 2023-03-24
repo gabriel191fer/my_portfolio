@@ -102,7 +102,7 @@ li {
 
 #footer{
 	background-color: #172d67;
-	height: 20vh;
+	height: auto;
 	padding: 30px;
 }
 
@@ -141,6 +141,12 @@ li {
 		flex-direction: column;
 		align-items: center;
 	}
+
+	.side_line{
+		display: none;
+	}
+
+
 }
 
 
