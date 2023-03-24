@@ -36,3 +36,6 @@ function burger() {
   }
 }
 
+let date = new Date().getFullYear();
+let text = document.getElementById("date_text");
+text.textContent += date;

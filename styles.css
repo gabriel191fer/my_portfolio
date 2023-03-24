@@ -46,27 +46,26 @@ h3 {
 	display: flex;
 	justify-content: center;
 	padding-bottom: 10px;
-	
-	
 }
 
-ul{
+ul {
 	padding-inline: 30px;
 }
 
-li { list-style: none; }
+li {
+	list-style: none;
+}
 
-.skill_icon{
+.skill_icon {
 	height: 50px;
 	padding: 5px;
 	color: #8c15e9;
 	font-size: 50px;
 	transition: 0.3s;
-
 }
 
 
-.skill{
+.skill {
 	padding: 15px;
 	display: flex;
 	flex-direction: column;
@@ -80,30 +79,69 @@ li { list-style: none; }
 	font-size: 30px;
 }
 
-li{
+li {
 	display: flex;
 }
 
 
-.sicon{
+.sicon {
 	display: flex;
 	padding-right: 15px;
 	font-size: 45px !important;
 }
 
-
-
-#skills_container{
+#skills_container {
 	height: auto;
 	margin: 0;
 	width: 100vw;
 	display: flex;
 	justify-content: center;
 	overflow-x: hidden;
-	
+
 }
 
+#footer{
+	background-color: #172d67;
+	height: 20vh;
+	padding: 30px;
+}
 
+#footer_container{
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: end;
+}
+
+.side_line{
+	height: 1px;
+	background-color: white;
+	width: 33vw;
+}
+
+#footer_content{
+	display: flex;
+	
+	width: 34vw;
+	justify-content: center;
+}
+
+@media screen and (max-width: 500px) {
+	.skill {
+		width: 75vw;
+		justify-self: center;
+		margin-bottom: 15px;
+		height: auto;
+		font-size: 22px;
+	}
+
+
+
+	#skills_container {
+		flex-direction: column;
+		align-items: center;
+	}
+}
 
 
 .nav-item {
@@ -114,10 +152,11 @@ li{
 	padding-top: 50px;
 }
 
-a.nav-item:visited{
+a.nav-item:visited {
 	color: #22ddd2;
 }
-a.nav-item:visited a.nav-item:hover{
+
+a.nav-item:visited a.nav-item:hover {
 	color: #8c15e9;
 }
 
@@ -141,7 +180,7 @@ a.nav-item:hover {
 #nav_div_mobile {
 	display: none;
 	width: 78vw;
-	padding:25px;
+	padding: 25px;
 }
 
 @media screen and (max-width: 500px) {
@@ -255,6 +294,8 @@ a.nav-item:visited {
 #icon_container {
 	flex-direction: row;
 	align-items: center;
+	gap: 100px;
+	height: auto;
 
 }
 
@@ -296,7 +337,7 @@ a.nav-item:visited {
 
 .icon {
 	height: 50px;
-	padding: 5px;
+	padding-inline: 10px;
 	color: white;
 	font-size: 50px;
 	cursor: pointer;
@@ -346,7 +387,13 @@ a.nav-item:visited {
 
 
 
-
+#date_text{
+	display: flex;
+	justify-content: center;
+	align-items: end;
+	margin-top: 5vh;
+	color: white;
+}
 
 
 #description {
@@ -503,13 +550,9 @@ a.nav-item:visited {
 	margin-left: 29vw;
 }
 
-
-
 * {
 	box-sizing: border-box;
 }
-
-
 
 
 .timeline {
