@@ -84,11 +84,6 @@ li {
 }
 
 
-.sicon {
-	display: flex;
-	padding-right: 15px;
-	font-size: 45px !important;
-}
 
 #skills_container {
 	height: auto;
@@ -111,7 +106,7 @@ li {
 	flex-direction: row;
 	justify-content: center;
 	align-items: end;
-}
+l}
 
 .side_line{
 	height: 1px;
@@ -126,13 +121,29 @@ li {
 	justify-content: center;
 }
 
+
+.sicon {
+	display: flex;
+	padding-right: 15px;
+	font-size: 45px;
+}
+
+.lni-python{
+	font-size: 45px !important;
+}
+
 @media screen and (max-width: 500px) {
 	.skill {
+		padding-inline: 5px;
 		width: 75vw;
 		justify-self: center;
 		margin-bottom: 15px;
 		height: auto;
-		font-size: 22px;
+		font-size: 25px ;
+	}
+
+	.sicon{
+		font-size: 35px;
 	}
 
 
@@ -144,6 +155,10 @@ li {
 
 	.side_line{
 		display: none;
+	}
+
+	.lni-python{
+		font-size: 35px !important;
 	}
 
 
@@ -162,7 +177,20 @@ a.nav-item:visited {
 	color: #22ddd2;
 }
 
-a.nav-item:visited a.nav-item:hover {
+a.nav-item-mobile:visited {
+	color: #22ddd2;
+}
+
+a.visited{
+	color: #22ddd2 !important;
+}
+
+a.hover{
+	color: #8c15e9 !important;
+}
+
+
+a.nav-item:visited, a.nav-item:hover {
 	color: #8c15e9;
 }
 
@@ -763,14 +791,15 @@ a.nav-item:visited {
 	content: none;
 }
 
-@media (max-width: 786px) {
+@media screen and (max-width: 786px) {
 	.timeline__event {
 		flex-direction: column;
 		align-self: center;
+		width: 75vw;
 	}
 
 	.timeline__event__content {
-		width: 100%;
+		width: 75vw;
 	}
 
 	.timeline__event__icon {
