@@ -69,7 +69,7 @@ li {
 	padding: 15px;
 	display: flex;
 	flex-direction: column;
-	align-items: center;
+	align-items: flex-start;
 	text-align: center;
 	margin-inline: auto;
 	width: 20vw;
@@ -132,21 +132,37 @@ l}
 	font-size: 45px !important;
 }
 
+.skill_title{
+	text-align: center;
+	margin-inline: auto;
+}
+
 @media screen and (max-width: 500px) {
 	.skill {
+		align-items: flex-start;
 		padding-inline: 5px;
 		width: 75vw;
-		justify-self: center;
 		margin-bottom: 15px;
 		height: auto;
 		font-size: 25px ;
+	}
+
+	.skill_icon{
+		font-size: 40px;
+	}
+
+	h2.skill{
+		font-size: 25px !important;
 	}
 
 	.sicon{
 		font-size: 35px;
 	}
 
-
+	.skill_title{
+		text-align: center;
+		margin: auto;
+	}
 
 	#skills_container {
 		flex-direction: column;
